@@ -7,6 +7,10 @@ module.exports = {
         home:'./src/index.js',
         print:'./src/print.js'
     },
+    devtool:'inline-source-map',
+    devServer:{
+        contentBase:'./dist'
+    },
     plugins:[
         new CleanPlugin('dist'),
         new HTMLPlugin({
